@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    password: zz123456.ZZ
+    url: jdbc:mysql://youxiu326.xin:3306/super_man?useUnicode=true&characterEncoding=utf8
+    username: youxiu326
+  redis:
+    host: youxiu326.xin
+  freemarker:
+    settings:
+      classic_compatible: true
+      datetime_format: yyyy-MM-dd HH:mm:ss
+      number_format: '#.##'
+      template_exception_handler: debug
+    suffix: .html
+
+server:
+  port: 8080
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml
+
